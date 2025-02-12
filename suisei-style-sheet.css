@@ -1,63 +1,45 @@
-/* Hoshimachi Suisei Theme */
+/* Hoshimachi Suisei Themed Text CSS */
 
 body {
-  font-family: 'Arial', sans-serif; /* Fallback font */
-  background-color: #1a1a1a; /* Dark background - similar to her usual streams */
-  color: #e0e0e0; /* Light text color for contrast */
+  font-family: 'Arial', sans-serif;
+  background-color: #00B5E2; /* Suisei's blue */
+  color: #FFFFFF; /* White text for contrast */
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the content horizontally */
-  min-height: 100vh; /* Ensure the body covers the entire viewport height */
+  padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Verdana', sans-serif; /* A slightly more stylized font */
-  color: #f0c808; /* Gold/Yellow accent color - reminiscent of her star theme */
-  text-align: center; /* Center all headings */
-  margin-bottom: 1rem; /* Space between headings */
-}
-
-h1 {
-  font-size: 3rem; /* Larger main title */
-  margin-top: 2rem; /* Add some top margin to the first heading */
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-/* Add more specific styling for other heading levels if needed */
-
-/* Star background effect (subtle) */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0L18.366 11.0564L30 15L41.634 11.0564L45 0L30 18.75L15 0Z' fill='%23404040'/%3E%3Cpath d='M45 60L41.634 48.9436L30 45L18.366 48.9436L15 60L30 41.25L45 60Z' fill='%23404040'/%3E%3Cpath d='M0 15L11.0564 18.366L15 30L11.0564 41.634L0 45L18.75 30L0 15Z' fill='%23404040'/%3E%3Cpath d='M60 45L48.9436 41.634L45 30L48.9436 18.366L60 15L41.25 30L60 45Z' fill='%23404040'/%3E%3C/svg%3E"); /* Small star SVG */
-  opacity: 0.2; /* Adjust opacity for subtle effect */
-  z-index: -1; /* Place behind the content */
-  animation: twinkle 10s linear infinite; /* Add a subtle twinkle animation */
-}
-
-@keyframes twinkle {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(-5px, 5px); }
-  50% { transform: translate(5px, -5px); }
-  75% { transform: translate(0, 0); }
-  100% { transform: translate(-2px, 2px); } /* Slight shift on the last frame */
-}
-
-
-/* Optional: Add a subtle glow effect to the headings */
 h1, h2, h3 {
-  text-shadow: 0 0 10px rgba(240, 200, 8, 0.5); /* Yellow glow */
+  color: #FFFFFF; /* White headers */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+p {
+  color: #FFFFFF; /* White paragraphs */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: #FF77A2; /* Suisei's pink links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00B5E2; /* Blue hover effect for links */
+}
+
+strong {
+  color: #FF77A2; /* Pink for bold text */
+}
+
+em {
+  color: #FFFFFF; /* White for emphasized text */
+}
+
+blockquote {
+  color: #FF77A2; /* Pink for blockquotes */
+  border-left: 4px solid #FF77A2;
+  padding-left: 10px;
+  font-style: italic;
 }
